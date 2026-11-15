@@ -191,6 +191,16 @@ Automated checks are a first pass, not a guarantee that a change will be
 merged. Fix any failures and keep the pull request focused while it is under
 review.
 
+When your pull request is ready, comment `/review` or `/request-review` on the
+PR. The author or a maintainer can use these commands. Short requests such as
+`@rohanmalhotracodes review` also work. Use a new comment, rather than editing
+an older one, to trigger the bot.
+
+The bot updates one status comment with either the checks still needed or a
+confirmation that maintainer review has been requested. It checks the latest
+commit, so a request cannot bypass CI, the CLA, or issue assignment. If changes
+were requested, address the feedback before asking for another review.
+
 Merging into `main` does not publish the change immediately. Production is
 deployed from the latest `main` branch once a week, on Sunday at 09:00
 Asia/Kolkata. Maintainers may run the production workflow manually for urgent

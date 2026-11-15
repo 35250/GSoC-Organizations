@@ -2,11 +2,29 @@
 
 ## Pull-request auto-merge
 
-The `Prepare pull request for review` workflow waits for CI, the CLA, and the
-issue-assignment guard to pass for the current commit. It then records an
-automated checks approval and requests review from the maintainer. That bot
-approval confirms only that automation passed; it does not replace human
-review.
+The `Prepare pull request for review` workflow checks CI, the CLA, and the
+issue-assignment guard for the current commit. It runs after each of those
+workflows finishes, when a PR is reopened or marked ready, or when its author
+or a maintainer posts a new `/review` or `/request-review` comment. Short
+requests such as `@rohanmalhotracodes review` are also supported.
+
+The bot maintains one PR comment listing blocking checks or confirming that
+review was requested. Once all checks pass, it records an automated checks
+approval and requests review from the maintainer. That approval confirms only
+that automation passed; it does not replace human review. If GitHub denies
+the automated approval, the bot still requests human review and explains the
+limitation in its comment.
+
+Fork CI events may omit their PR association. The workflow matches the CI
+commit and branch against open PRs, then reads the current PR again before
+approving or requesting review. It executes only automation from the trusted
+workflow commit, never code from the contributor's branch. Review requests
+are serialized per PR, and repeated commands update the existing bot comment.
+
+For an already open PR, a maintainer can run **Prepare pull request for review**
+from the Actions tab with its PR number, or the author can post `/review`.
+Closed PRs, drafts, and PRs targeting another branch are ignored. Updating this
+automation does not deploy the website or merge any PR.
 
 The `Auto-merge approved pull requests` workflow enables a squash auto-merge
 only after a separate approval from a repository member with `write`,
