@@ -578,7 +578,7 @@ const manualRepositories = {
         url: 'https://github.com/fossi-foundation',
         host: 'GitHub',
         verified: true,
-        lastChecked: '2026-11-14',
+        lastChecked: '2026-11-16',
       },
     ],
     organizationProfile: 'https://github.com/fossi-foundation',
