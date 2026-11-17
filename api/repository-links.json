@@ -245,9 +245,24 @@
     "source": "manual"
   },
   "Discourse": {
-    "repositories": [],
-    "organizationProfile": "https://www.google.com/search?q=Discourse%20source%20code%20repository",
-    "source": "search"
+    "repositories": [
+      {
+        "label": "Discourse",
+        "url": "https://github.com/discourse/discourse",
+        "host": "GitHub",
+        "verified": true,
+        "lastChecked": "2026-11-13"
+      },
+      {
+        "label": "GitHub organization",
+        "url": "https://github.com/discourse",
+        "host": "GitHub",
+        "verified": true,
+        "lastChecked": "2026-11-13"
+      }
+    ],
+    "organizationProfile": "https://github.com/discourse",
+    "source": "manual"
   },
   "Distributed and Unified Numerics Environment (DUNE)": {
     "repositories": [],
@@ -364,11 +379,11 @@
   "Free and Open Source Silicon Foundation": {
     "repositories": [
       {
-        "label": "Official repositories",
+        "label": "FOSSi Foundation repositories",
         "url": "https://github.com/fossi-foundation",
         "host": "GitHub",
         "verified": true,
-        "lastChecked": "2026-11-14"
+        "lastChecked": "2026-11-17"
       }
     ],
     "organizationProfile": "https://github.com/fossi-foundation",
@@ -3597,9 +3612,17 @@
     "source": "search"
   },
   "OpenMS Inc": {
-    "repositories": [],
-    "organizationProfile": "https://www.google.com/search?q=OpenMS%20Inc%20source%20code%20repository",
-    "source": "search"
+    "repositories": [
+      {
+        "label": "OpenMS Inc",
+        "url": "https://github.com/OpenMS/OpenMS",
+        "host": "GitHub",
+        "verified": true,
+        "lastChecked": "2026-11-13"
+      }
+    ],
+    "organizationProfile": "https://github.com/OpenMS",
+    "source": "manual"
   },
   "The OpenROAD Initiative": {
     "repositories": [],

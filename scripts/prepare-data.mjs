@@ -571,14 +571,47 @@ const manualRepositories = {
     organizationProfile: 'https://git.kernel.org/pub/scm/git/',
     source: 'manual',
   },
+  'OpenMS Inc': {
+    repositories: [
+      {
+        label: 'OpenMS Inc',
+        url: 'https://github.com/OpenMS/OpenMS',
+        host: 'GitHub',
+        verified: true,
+        lastChecked: '2026-11-13',
+      },
+    ],
+    organizationProfile: 'https://github.com/OpenMS',
+    source: 'manual',
+  },
+  Discourse: {
+    repositories: [
+      {
+        label: 'Discourse',
+        url: 'https://github.com/discourse/discourse',
+        host: 'GitHub',
+        verified: true,
+        lastChecked: '2026-11-13',
+      },
+      {
+        label: 'GitHub organization',
+        url: 'https://github.com/discourse',
+        host: 'GitHub',
+        verified: true,
+        lastChecked: '2026-11-13',
+      },
+    ],
+    organizationProfile: 'https://github.com/discourse',
+    source: 'manual',
+  },
   'Free and Open Source Silicon Foundation': {
     repositories: [
       {
-        label: 'Official repositories',
+        label: 'FOSSi Foundation repositories',
         url: 'https://github.com/fossi-foundation',
         host: 'GitHub',
         verified: true,
-        lastChecked: '2026-11-16',
+        lastChecked: '2026-11-17',
       },
     ],
     organizationProfile: 'https://github.com/fossi-foundation',
